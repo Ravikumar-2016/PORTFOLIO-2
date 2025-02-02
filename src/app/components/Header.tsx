@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             <a href="https://www.linkedin.com/in/gunti-ravikumar-8b360a2a8" className="p-2 hover:text-teal-300 transition-colors" target="_blank" rel="noopener noreferrer">
               <Linkedin size={24} className="text-white" />
             </a>
-            <a href="https://www.instagram.com/ravikumargunti58/" className="p-2 hover:text-teal-300 transition-colors" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/ravikumargunti2016/" className="p-2 hover:text-teal-300 transition-colors" target="_blank" rel="noopener noreferrer">
               <Instagram size={24} className="text-white" />
             </a>
           </div>

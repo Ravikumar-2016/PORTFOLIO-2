@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="https://www.instagram.com/ravikumargunti58/"
+            href="https://www.instagram.com/ravikumargunti2016/"
             className="text-gray-400 hover:text-teal-400 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
