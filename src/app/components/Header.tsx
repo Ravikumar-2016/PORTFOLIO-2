@@ -1,38 +1,7 @@
-// import type React from "react"
-// import Link from "next/link"
-
-// const Header: React.FC = () => {
-//   return (
-//     <header className="bg-gray-800 fixed w-full top-0 z-50">
-//       <div className="container mx-auto px-4">
-//         <nav className="flex items-center justify-between h-16">
-//           <Link href="/" className="text-xl font-bold text-white hover:text-teal-300">
-//             Gunti Ravikumar
-//           </Link>
-//           <div className="flex gap-6">
-//             <Link href="/" className="text-white hover:text-teal-300">
-//               Home
-//             </Link>
-//             <Link href="/field-grower" className="text-white hover:text-teal-300">
-//               Field Grower
-//             </Link>
-//             <Link href="/saviour" className="text-white hover:text-teal-300">
-//               Saviour
-//             </Link>
-//           </div>
-//         </nav>
-//       </div>
-//     </header>
-//   )
-// }
-
-// export default Header
-
-
-
 import type React from "react";
 import Link from "next/link";
 import { Github, Linkedin, Instagram } from "lucide-react";
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
@@ -49,10 +18,12 @@ const Header: React.FC = () => {
         <div className="max-w-4xl mx-auto text-center mt-12">
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto rounded-full border-4 border-teal-500 overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300">
-              <img 
+              <Image
                 src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png"
                 alt="Profile"
                 className="w-full h-full object-cover bg-gray-100"
+                width={128} // width of the image
+                height={128} // height of the image
               />
             </div>
           </div>

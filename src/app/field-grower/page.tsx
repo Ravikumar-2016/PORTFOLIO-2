@@ -1,15 +1,30 @@
-import type React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { Github, ArrowLeft, Users, Database, Leaf, LineChart, MessageSquare, Shield } from "lucide-react"
+import type React from "react";
+import Image from "next/image";
+import {
+  Github,
+  Users,
+  Database,
+  Leaf,
+  LineChart,
+  MessageSquare,
+  Shield,
+} from "lucide-react";
 
-const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
+const FeatureCard = ({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) => (
   <div className="bg-gray-800/80 p-6 rounded-lg hover:bg-gray-700/80 transition-all transform hover:-translate-y-1">
     <div className="text-teal-400 mb-4">{icon}</div>
     <h3 className="text-3xl font-semibold mb-2 text-white">{title}</h3>
     <p className="text-lg text-gray-300">{description}</p>
   </div>
-)
+);
 
 const UserTypeCard = ({ title, features }: { title: string; features: string[] }) => (
   <div className="bg-gray-800/80 p-6 rounded-lg">
@@ -23,12 +38,11 @@ const UserTypeCard = ({ title, features }: { title: string; features: string[] }
       ))}
     </ul>
   </div>
-)
+);
 
 export default function FieldGrowerPage() {
   return (
     <main className="bg-gray-900">
-      {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/60 z-10" />
         <Image
@@ -40,7 +54,9 @@ export default function FieldGrowerPage() {
         />
         <div className="relative z-20 text-center px-4">
           <h1 className="text-5xl font-bold mb-6 text-white">FieldGrower</h1>
-          <p className="text-lg max-w-3xl mx-auto text-gray-200 mb-8">Revolutionizing Agriculture through Technology</p>
+          <p className="text-lg max-w-3xl mx-auto text-gray-200 mb-8">
+            Revolutionizing Agriculture through Technology
+          </p>
           <a
             href="https://github.com/Ravikumar-2016/FieldGrower"
             target="_blank"
@@ -54,77 +70,77 @@ export default function FieldGrowerPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16">
-   {/* Project Overview */}
-<section className="mb-20">
-  <h2 className="text-4xl font-extrabold mb-8 text-teal-400 tracking-wide font-serif text-center">
-    What is FieldGrower?
-  </h2>
+        {/* Project Overview */}
+        <section className="mb-20">
+          <h2 className="text-4xl font-extrabold mb-8 text-teal-400 tracking-wide font-serif text-center">
+            What is FieldGrower?
+          </h2>
 
-  {/* Introduction */}
-  <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
-    <p className="text-xl leading-relaxed text-gray-300 font-sans">
-      <strong className="text-white">FieldGrower</strong> is a revolutionary agricultural platform that seamlessly connects 
-      farmers, laborers, and employees. By integrating technology-driven solutions, it enhances productivity, resource management, 
-      and real-time market insights, making agriculture smarter and more efficient.
-    </p>
-  </div>
+          {/* Introduction */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
+            <p className="text-xl leading-relaxed text-gray-300 font-sans">
+              <strong className="text-white">FieldGrower</strong> is a revolutionary agricultural platform that seamlessly connects 
+              farmers, laborers, and employees. By integrating technology-driven solutions, it enhances productivity, resource management, 
+              and real-time market insights, making agriculture smarter and more efficient.
+            </p>
+          </div>
 
-  {/* How FieldGrower Works */}
-  <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
-    <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
-      <Users className="w-8 h-8 mr-2" />
-      How FieldGrower Works
-    </h3>
-    <ul className="list-disc list-inside text-lg text-gray-300 mb-6 font-sans space-y-4">
-      <li><strong>Farmers:</strong> Manage crops, receive AI-driven suggestions, track market prices, and hire laborers.</li>
-      <li><strong>Laborers:</strong> Find job opportunities, track work history, and report issues seamlessly.</li>
-      <li><strong>Employees:</strong> Resolve user queries, update market trends, and oversee farm activities.</li>
-      <li><strong>Admins:</strong> Oversee platform operations, manage users, and analyze market trends.</li>
-    </ul>
-  </div>
+          {/* How FieldGrower Works */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
+            <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
+              <Users className="w-8 h-8 mr-2" />
+              How FieldGrower Works
+            </h3>
+            <ul className="list-disc list-inside text-lg text-gray-300 mb-6 font-sans space-y-4">
+              <li><strong>Farmers:</strong> Manage crops, receive AI-driven suggestions, track market prices, and hire laborers.</li>
+              <li><strong>Laborers:</strong> Find job opportunities, track work history, and report issues seamlessly.</li>
+              <li><strong>Employees:</strong> Resolve user queries, update market trends, and oversee farm activities.</li>
+              <li><strong>Admins:</strong> Oversee platform operations, manage users, and analyze market trends.</li>
+            </ul>
+          </div>
 
-  {/* The Impact of FieldGrower */}
-  <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
-    <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
-      <LineChart className="w-8 h-8 mr-2" />
-      The Impact of FieldGrower
-    </h3>
-    <ul className="list-disc list-inside text-xl text-gray-300 mb-6 font-sans space-y-4">
-      <li><strong>For Farmers:</strong> Increased productivity, real-time market data, and effective labor management.</li>
-      <li><strong>For Laborers:</strong> Easy job access, work tracking, and issue resolution support.</li>
-      <li><strong>For Employees:</strong> Simplified query resolution, database management, and market monitoring.</li>
-      <li><strong>For Admins:</strong> Complete control over platform operations with data-driven insights.</li>
-    </ul>
-  </div>
+          {/* The Impact of FieldGrower */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
+            <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
+              <LineChart className="w-8 h-8 mr-2" />
+              The Impact of FieldGrower
+            </h3>
+            <ul className="list-disc list-inside text-xl text-gray-300 mb-6 font-sans space-y-4">
+              <li><strong>For Farmers:</strong> Increased productivity, real-time market data, and effective labor management.</li>
+              <li><strong>For Laborers:</strong> Easy job access, work tracking, and issue resolution support.</li>
+              <li><strong>For Employees:</strong> Simplified query resolution, database management, and market monitoring.</li>
+              <li><strong>For Admins:</strong> Complete control over platform operations with data-driven insights.</li>
+            </ul>
+          </div>
 
-  {/* Future Vision */}
-  <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
-    <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
-      <Leaf className="w-8 h-8 mr-2" />
-      Future Vision
-    </h3>
-    <p className="text-xl leading-relaxed mb-6 text-gray-300 font-sans">
-      FieldGrower is set to evolve with the latest technological advancements, making agriculture more intelligent and efficient. 
-      The future roadmap includes:
-    </p>
-    <ul className="list-disc list-inside text-lg text-gray-300 mb-6 font-sans space-y-4">
-      <li><strong>AI & Machine Learning:</strong> Smart crop recommendations and predictive market analytics.</li>
-      <li><strong>IoT Integration:</strong> Real-time monitoring of crop health and soil conditions.</li>
-      <li><strong>Mobile App:</strong> A feature-rich mobile app for seamless user experience.</li>
-      <li><strong>Blockchain:</strong> Secure and transparent transactions for agricultural trade.</li>
-    </ul>
-  </div>
+          {/* Future Vision */}
+          <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 mb-12">
+            <h3 className="text-3xl font-bold mb-6 text-teal-400 font-sans flex items-center">
+              <Leaf className="w-8 h-8 mr-2" />
+              Future Vision
+            </h3>
+            <p className="text-xl leading-relaxed mb-6 text-gray-300 font-sans">
+              FieldGrower is set to evolve with the latest technological advancements, making agriculture more intelligent and efficient. 
+              The future roadmap includes:
+            </p>
+            <ul className="list-disc list-inside text-lg text-gray-300 mb-6 font-sans space-y-4">
+              <li><strong>AI & Machine Learning:</strong> Smart crop recommendations and predictive market analytics.</li>
+              <li><strong>IoT Integration:</strong> Real-time monitoring of crop health and soil conditions.</li>
+              <li><strong>Mobile App:</strong> A feature-rich mobile app for seamless user experience.</li>
+              <li><strong>Blockchain:</strong> Secure and transparent transactions for agricultural trade.</li>
+            </ul>
+          </div>
 
-  {/* Call to Action */}
-  <div className="text-center mt-12">
-    <p className="text-lg leading-relaxed text-gray-300 font-sans mb-6">
-      Want to explore more? Check out our{" "}
-      <a href="https://github.com/Ravikumar-2016/FieldGrower" className="text-teal-400 font-bold hover:underline font-semibold">
-        GitHub repository
-      </a>. The project is completed and will be deployed soon! 🚀
-    </p>
-  </div>
-</section>
+          {/* Call to Action */}
+          <div className="text-center mt-12">
+            <p className="text-lg leading-relaxed text-gray-300 font-sans mb-6">
+              Want to explore more? Check out our{" "}
+              <a href="https://github.com/Ravikumar-2016/FieldGrower" className="text-teal-400 font-bold hover:underline font-semibold">
+                GitHub repository
+              </a>. The project is completed and will be deployed soon! 🚀
+            </p>
+          </div>
+        </section>
 
         {/* Key Features */}
         <section className="mb-20">
@@ -252,5 +268,5 @@ export default function FieldGrowerPage() {
         </section>
       </div>
     </main>
-  )
+  );
 }

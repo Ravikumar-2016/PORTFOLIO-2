@@ -1,7 +1,8 @@
-import type React from "react"
-import { Code, ExternalLink } from "lucide-react"
-import Link from "next/link"
-import type { Project } from '@/app/types'
+import type React from "react";
+import { Code, ExternalLink } from "lucide-react";
+import Link from "next/link";
+import type { Project } from '@/app/types';
+import Image from 'next/image';
 
 const projects: Project[] = [
   {
@@ -17,11 +18,18 @@ const projects: Project[] = [
       "Disaster management system featuring real-time alerts, resource management, and emergency response coordination.",
     imageUrl: "https://img2.chinadaily.com.cn/images/202308/10/64d4501fa310352610ba7744.jpeg",
   },
-]
+];
 
 const ProjectCard: React.FC<Project> = ({ title, description, imageUrl }) => (
   <div className="bg-gray-800/80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <img src={imageUrl || "/placeholder.svg"} alt={title} className="w-full h-48 object-cover" />
+    <div className="relative w-full h-48">
+      <Image
+        src={imageUrl || "/placeholder.svg"}
+        alt={title}
+        layout="fill" // This ensures the image fills the container's height and width
+        objectFit="cover"
+      />
+    </div>
     <div className="p-6">
       <h3 className="text-2xl font-bold mb-3 text-white">{title}</h3>
       <p className="text-gray-300 mb-4">{description}</p>
@@ -33,7 +41,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, imageUrl }) => (
       </Link>
     </div>
   </div>
-)
+);
 
 const Projects: React.FC = () => {
   return (
@@ -49,8 +57,7 @@ const Projects: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
-
+export default Projects;
