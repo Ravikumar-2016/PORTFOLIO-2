@@ -1,6 +1,7 @@
 import type React from "react"
 import { Award, Code, User } from "lucide-react"
-import type { Skill } from "@/types"
+import type { Skill } from "@/app/types";
+
 
 const technicalSkills: Skill[] = [
   { name: "Problem Solving", level: 90 },
