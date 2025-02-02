@@ -42,27 +42,56 @@ export default function SaviourPage() {
       </section>
 
       <div className="container mx-auto px-4 py-16">
-        {/* Project Overview */}
-        <section className="mb-20">
-          <h2 className="text-4xl font-bold mb-8 text-white">Project Overview</h2>
-          <div className="bg-gray-800/80 p-8 rounded-lg">
-            <p className="text-lg leading-relaxed mb-6 text-gray-300">
-              The Saviour project is a cutting-edge disaster management system that leverages modern technology to save
-              lives during natural disasters. Our system provides real-time monitoring, early warnings, and coordinated
-              response capabilities to help communities prepare for and respond to emergencies effectively.
-            </p>
-            <p className="text-lg leading-relaxed text-gray-300">
-              Visit our{" "}
-              <a href="https://github.com/vikrantwiz02/Saviour2.O" className="text-teal-400 hover:underline">
-                GitHub repository
-              </a>{" "}
-              to explore the complete codebase, documentation, and contribute to this life-saving initiative.
-            </p>
-          </div>
-        </section>
+        
+       {/* Project Overview */}
+<section className="mb-20">
+  <h2 className="text-4xl font-bold mb-8 text-white">Project Overview</h2>
+  <div className="space-y-8">
+    {/* What is Saviour? */}
+    <div className="bg-gray-800/80 p-8 rounded-lg hover:bg-gray-700/80 transition-all transform hover:-translate-y-1">
+      <h3 className="text-3xl font-bold mb-6 text-teal-400">What is Saviour?</h3>
+      <p className="text-xl text-gray-300 mb-6">
+        Saviour is an advanced disaster management platform designed to save lives during natural disasters. It integrates cutting-edge technology to provide real-time solutions for disaster preparedness, response, and recovery.
+      </p>
+      <ul className="list-disc list-inside ml-4 text-xl text-gray-300 space-y-4">
+        <li><strong>AI/ML-Powered Early Warnings:</strong> Predicts disasters and alerts communities in real-time.</li>
+        <li><strong>Emergency Navigation:</strong> Guides people to safe zones with optimized routes.</li>
+        <li><strong>Peer-to-Peer Support:</strong> Enables communities to assist each other during crises.</li>
+        <li><strong>Offline Mesh Networking:</strong> Ensures communication even when traditional networks fail.</li>
+        <li><strong>Web & Mobile Integration:</strong> Provides seamless access to disaster management tools.</li>
+      </ul>
+    </div>
 
-        {/* Key Features */}
-        <section className="mb-20">
+    {/* Why Saviour? */}
+    <div className="bg-gray-800/80 p-8 rounded-lg hover:bg-gray-700/80 transition-all transform hover:-translate-y-1">
+      <h3 className="text-3xl font-bold mb-6 text-teal-400">Why Saviour?</h3>
+      <p className="text-xl text-gray-300 mb-6">
+        Traditional disaster management systems often fail during emergencies, leading to chaos, panic, and loss of life. Saviour addresses these challenges by leveraging modern technology to provide reliable and efficient solutions.
+      </p>
+      <ul className="list-disc list-inside ml-4 text-xl text-gray-300 space-y-4">
+        <li><strong>Real-Time Alerts:</strong> Keeps communities informed about impending disasters.</li>
+        <li><strong>Safe Navigation:</strong> Helps people reach shelters and safe zones quickly.</li>
+        <li><strong>Offline Communication:</strong> Ensures connectivity in remote or disaster-struck areas.</li>
+        <li><strong>AI-Driven Forecasting:</strong> Improves disaster preparedness with accurate predictions.</li>
+        <li><strong>Resource Management:</strong> Tracks and distributes emergency supplies efficiently.</li>
+      </ul>
+    </div>
+  </div>
+
+  {/* GitHub Repository Link */}
+  <div className="mt-12 text-center">
+    <p className="text-xl text-gray-300 mb-6">
+      Join us in making the world safer. Explore the project on{" "}
+      <a href="https://github.com/vikrantwiz02/Saviour2.O" className="text-teal-400 hover:underline">
+        GitHub
+      </a>{" "}
+      and contribute to this life-saving initiative.
+    </p>
+  </div>
+</section>
+
+                {/* Key Features */}
+                <section className="mb-20">
           <h2 className="text-4xl font-bold mb-8 text-white">Core Capabilities</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <FeatureCard
@@ -215,4 +244,3 @@ export default function SaviourPage() {
     </main>
   )
 }
-
