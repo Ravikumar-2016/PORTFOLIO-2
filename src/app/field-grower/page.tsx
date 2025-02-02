@@ -238,7 +238,7 @@ export default function FieldGrowerPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gray-800/80 p-6 rounded-lg">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-white">Ravikumar</h3>
+                <h3 className="text-xl font-semibold text-white">Gunti Ravikumar</h3>
                 <a
                   href="https://github.com/Ravikumar-2016"
                   target="_blank"
@@ -252,7 +252,7 @@ export default function FieldGrowerPage() {
             </div>
             <div className="bg-gray-800/80 p-6 rounded-lg">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-semibold text-white">John Doe</h3>
+                <h3 className="text-xl font-semibold text-white">HarshKumar Palas</h3>
                 <a
                   href="https://github.com/johndoe"
                   target="_blank"

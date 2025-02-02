@@ -169,7 +169,7 @@ export default function SaviourPage() {
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
     <div className="bg-gray-800/80 p-6 rounded-lg">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-xl font-semibold text-white">Vikrant</h3>
+        <h3 className="text-xl font-semibold text-white">VikrantKumar</h3>
         <a
           href="https://github.com/vikrantwiz02"
           target="_blank"
@@ -184,7 +184,7 @@ export default function SaviourPage() {
 
     <div className="bg-gray-800/80 p-6 rounded-lg">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-xl font-semibold text-white">Ravikumar</h3>
+        <h3 className="text-xl font-semibold text-white">Gunti Ravikumar</h3>
         <a
           href="https://github.com/Ravikumar-2016"
           target="_blank"
@@ -199,7 +199,7 @@ export default function SaviourPage() {
 
     <div className="bg-gray-800/80 p-6 rounded-lg">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-xl font-semibold text-white">Harsh</h3>
+        <h3 className="text-xl font-semibold text-white">Harshkumar Palas</h3>
         <a
           href="https://github.com/harshpalas"
           target="_blank"
