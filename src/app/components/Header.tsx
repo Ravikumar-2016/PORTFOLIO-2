@@ -19,48 +19,61 @@ const Header: React.FC = () => {
 
   return (
     <header className="min-h-screen flex flex-col relative overflow-hidden bg-green-900">
-      {/* Top Navigation Bar */}
-      <div className="w-full bg-[#0B4619] py-4 px-6 flex justify-between items-center shadow-lg border-b border-teal-500/20">
-        <Link href="/" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300">
-          Gunti Ravikumar
-        </Link>
-        <div className="flex items-center space-x-6">
-          <a
-            href="https://github.com/Ravikumar-2016"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-teal-300 transition-colors duration-300 p-2 rounded-lg hover:bg-teal-500/10"
-            aria-label="GitHub"
-          >
-            <Github size={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gunti-ravikumar-8b360a2a8"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-teal-300 transition-colors duration-300 p-2 rounded-lg hover:bg-teal-500/10"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={24} />
-          </a>
-          <a
-            href="https://www.instagram.com/ravikumargunti2016/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-teal-300 transition-colors duration-300 p-2 rounded-lg hover:bg-teal-500/10"
-            aria-label="Instagram"
-          >
-            <Instagram size={24} />
-          </a>
-          <button
-            onClick={toggleSidebar}
-            className="text-white hover:text-teal-300 transition-colors duration-300 p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-300 hover:bg-teal-500/10"
-            aria-label="Toggle Sidebar"
-          >
-            <Menu size={24} />
-          </button>
-        </div>
-      </div>
+  
+  {/*Navigation bar*/}
+ <div className="w-full bg-[#0B4619] py-4 px-4 md:px-8 flex items-center shadow-lg border-b border-teal-500/20">
+  
+  {/* Wrapper: Center Alignment in Laptop */}
+  <div className="w-full flex justify-between md:justify-center md:space-x-6 items-center">
+    
+    {/* Name - Left in Mobile, Starts from Center in Laptop */}
+    <Link href="/" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300">
+      Ravikumar
+    </Link>
+
+    {/* Social Links & Sidebar - Next to Name in Laptop, Right in Mobile */}
+    <div className="flex items-center space-x-2 md:space-x-6">
+      <a
+        href="https://github.com/Ravikumar-2016"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white hover:text-teal-300 transition-colors duration-300 p-1 rounded-lg hover:bg-teal-500/10"
+        aria-label="GitHub"
+      >
+        <Github size={22} />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/gunti-ravikumar-8b360a2a8"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white hover:text-teal-300 transition-colors duration-300 p-1 rounded-lg hover:bg-teal-500/10"
+        aria-label="LinkedIn"
+      >
+        <Linkedin size={22} />
+      </a>
+      <a
+        href="https://www.instagram.com/ravikumargunti2016/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white hover:text-teal-300 transition-colors duration-300 p-1 rounded-lg hover:bg-teal-500/10"
+        aria-label="Instagram"
+      >
+        <Instagram size={22} />
+      </a>
+      <button
+        onClick={toggleSidebar}
+        className="text-white hover:text-teal-300 transition-colors duration-300 p-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-300 hover:bg-teal-500/10"
+        aria-label="Toggle Sidebar"
+      >
+        <Menu size={24} />
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+
 
       {/* Main Content */}
       <div className="flex-1 relative">
