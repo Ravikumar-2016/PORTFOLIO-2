@@ -1,80 +1,41 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
-import { Mail, Send } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
+
+const ContactItem = ({ icon: Icon, text, href }: { icon: React.ElementType; text: string; href?: string }) => (
+  <div className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors duration-300">
+    <Icon className="w-6 h-6 text-teal-400" />
+    {href ? (
+      <a href={href} className="hover:underline text-lg font-medium">
+        {text}
+      </a>
+    ) : (
+      <span className="text-lg font-medium">{text}</span>
+    )}
+  </div>
+)
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
-  }
-
   return (
-    <section className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-2 text-white">
-          <Mail className="inline-block text-teal-400" /> Get in Touch
-        </h2>
-        <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label className="block text-sm font-medium mb-2 text-gray-300">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition-all text-white"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-2 text-gray-300">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition-all text-white"
-                  placeholder="your@email.com"
-                />
-              </div>
+    <section className="py-24 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-lg">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-blue-500 to-teal-500 p-8 text-center">
+            <h2 className="text-4xl font-extrabold text-white">Get in Touch</h2>
+            <p className="text-lg text-gray-200 mt-2">I'd love to hear from you</p>
+          </div>
+
+          {/* Contact Information */}
+          <div className="bg-gray-800 p-10">
+            <h3 className="text-2xl font-semibold mb-6 border-b pb-3 border-gray-600">Contact Information</h3>
+            <div className="space-y-6">
+              <ContactItem icon={Mail} text="ravikumargunti837@gmail.com" href="mailto:ravikumargunti837@gmail.com" />
+              <ContactItem icon={Phone} text="+91 8888888888" href="tel:+918888888888" />
+              <ContactItem icon={MapPin} text="IIITDM Jabalpur" />
             </div>
-            <div>
-              <label className="block text-sm font-medium mb-2 text-gray-300">Message</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 focus:border-teal-500 focus:ring-1 focus:ring-teal-500 outline-none transition-all h-32 text-white"
-                placeholder="Your message..."
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg flex items-center justify-center gap-2 transition-all hover:transform hover:scale-105"
-            >
-              <Send size={20} />
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
@@ -82,4 +43,3 @@ const Contact: React.FC = () => {
 }
 
 export default Contact
-
