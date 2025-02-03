@@ -24,7 +24,7 @@ const Contact: React.FC = () => {
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-500 to-teal-500 p-8 text-center">
             <h2 className="text-4xl font-extrabold text-white">Get in Touch</h2>
-            <p className="text-lg text-gray-200 mt-2">I'd love to hear from you</p>
+            <p className="text-lg text-gray-200 mt-2">I&rsquo;d love to hear from you</p>
           </div>
 
           {/* Contact Information */}

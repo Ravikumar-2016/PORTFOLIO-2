@@ -21,10 +21,7 @@ const Header: React.FC = () => {
     <header className="min-h-screen flex flex-col relative overflow-hidden bg-green-900">
       {/* Top Navigation Bar */}
       <div className="w-full bg-[#0B4619] py-4 px-6 flex justify-between items-center shadow-lg border-b border-teal-500/20">
-        <Link
-          href="/"
-          className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300"
-        >
+        <Link href="/" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300">
           Gunti Ravikumar
         </Link>
         <div className="flex items-center space-x-6">
@@ -81,7 +78,9 @@ const Header: React.FC = () => {
                 />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white animate-[bounce_3s_infinite]">Hi, I'm Gunti Ravikumar</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white animate-[bounce_3s_infinite]">
+              Hi, I&apos;m Gunti Ravikumar
+            </h1>
             <p className="text-xl md:text-2xl text-teal-300 mb-8">Undergraduate at IIITDM Jabalpur</p>
             <div className="flex flex-col items-center">
               <Link
@@ -175,3 +174,4 @@ const Header: React.FC = () => {
 }
 
 export default Header
+
