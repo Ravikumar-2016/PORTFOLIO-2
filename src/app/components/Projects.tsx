@@ -21,23 +21,24 @@ const projects: Project[] = [
 ];
 
 const ProjectCard: React.FC<Project> = ({ title, description, imageUrl }) => (
-  <div className="bg-gray-800/80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-    <div className="relative w-full h-48">
+  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-gray-200">
+    <div className="relative w-full h-56">
       <Image
         src={imageUrl || "/placeholder.svg"}
         alt={title}
-        layout="fill" // This ensures the image fills the container's height and width
+        layout="fill"
         objectFit="cover"
+        className="rounded-t-2xl"
       />
     </div>
     <div className="p-6">
-      <h3 className="text-2xl font-bold mb-3 text-white">{title}</h3>
-      <p className="text-gray-300 mb-4">{description}</p>
+      <h3 className="text-3xl font-bold text-blue-700 mb-3">{title}</h3>
+      <p className="text-gray-600 text-lg mb-4">{description}</p>
       <Link
         href={`/${title.toLowerCase().replace(" ", "-")}`}
-        className="inline-flex items-center text-teal-400 hover:text-teal-300"
+        className="inline-flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-200 font-medium"
       >
-        Learn More <ExternalLink className="ml-1" size={16} />
+        Learn More <ExternalLink className="ml-2" size={18} />
       </Link>
     </div>
   </div>
@@ -45,12 +46,12 @@ const ProjectCard: React.FC<Project> = ({ title, description, imageUrl }) => (
 
 const Projects: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 flex items-center text-white">
-          <Code className="mr-2 text-teal-400" /> Projects
+    <section className="py-24 bg-gradient-to-br from-blue-100 via-white to-blue-50">
+      <div className="container mx-auto px-6">
+        <h2 className="text-4xl font-extrabold mb-12 flex items-center text-blue-800">
+          <Code className="mr-3 text-blue-600" size={36} /> Projects
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
