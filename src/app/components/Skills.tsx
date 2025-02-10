@@ -33,7 +33,7 @@ const SkillBar: React.FC<Skill> = ({ name, level }) => (
 
 const Skills: React.FC = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-100 to-white">
+    <section id="skills" className="py-24 bg-gradient-to-b from-gray-100 to-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-extrabold mb-14 text-center flex items-center justify-center gap-3 text-gray-900">
           <Award className="inline-block text-teal-600" size={40} /> Skills & Expertise

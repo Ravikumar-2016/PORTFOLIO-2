@@ -1,54 +1,17 @@
 "use client";
 
-import type React from "react";
+import React from "react";
 import { User, Download } from "lucide-react";
 
 const About: React.FC = () => {
   const handleDownload = () => {
-    const details = `
-    Gunti Ravikumar
-    B.Tech Student at IIITDM Jabalpur
-    
-    Contact:
-    Email: ravikumargunti837@gmail.com
-    Phone: +918888888888
-    
-    Education:
-    - B.Tech at IIITDM Jabalpur (2023-2027)
-    - Intermediate at Narayana Junior College (2021-2023)
-    - Secondary Education at MJPTBCWREIS (2017-2021)
-    
-    Technical Skills:
-    - Problem Solving (90%)
-    - Data Structures (85%)
-    - Algorithms (80%)
-    - Web Development (75%)
-    
-    Soft Skills:
-    - Team Leadership (85%)
-    - Project Management (80%)
-    - Communication (90%)
-    - Adaptability (85%)
-    
-    Projects:
-    1. Field Grower
-    - Agricultural optimization solution
-    - Features: crop recommendation, weather monitoring, yield prediction
-    
-    2. Saviour
-    - Disaster management system
-    - Features: real-time alerts, resource management, emergency response coordination
-    `;
-
-    const blob = new Blob([details], { type: "text/plain" });
-    const url = window.URL.createObjectURL(blob);
+    const resumeUrl = "/MyResume.pdf"; // Path to your resume in the public folder
     const link = document.createElement("a");
-    link.href = url;
-    link.download = "Gunti_Ravikumar_Details.txt";
+    link.href = resumeUrl;
+    link.download = "Gunti_Ravikumar_Resume.pdf"; // Custom name for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
   };
 
   return (

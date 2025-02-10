@@ -21,7 +21,8 @@ const Header: React.FC = () => {
       {/* Fixed Navigation Bar */}
       <div className="fixed top-0 left-0 w-full bg-[#35d7ff] py-4 px-4 md:px-8 flex items-center shadow-lg border-b border-teal-500/20 z-50">
         <div className="w-full flex justify-between md:justify-center md:space-x-6 items-center">
-          <Link href="/" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300">
+          {/* Link to the About Me section */}
+          <Link href="/#about" className="text-2xl font-bold text-white hover:text-teal-300 transition-colors duration-300">
             Ravikumar
           </Link>
           <div className="flex items-center space-x-2 md:space-x-6">
@@ -113,6 +114,7 @@ const Header: React.FC = () => {
                 <span className="font-medium">Home</span>
               </Link>
 
+              {/* Link to the About Me section */}
               <Link
                 href="/#about"
                 onClick={closeSidebar}
@@ -122,6 +124,7 @@ const Header: React.FC = () => {
                 <span className="font-medium">About Me</span>
               </Link>
 
+              {/* Link to the Skills section */}
               <Link
                 href="/#skills"
                 onClick={closeSidebar}
@@ -206,4 +209,3 @@ const Header: React.FC = () => {
 }
 
 export default Header
-
