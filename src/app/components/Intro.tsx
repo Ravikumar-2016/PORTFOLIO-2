@@ -28,7 +28,7 @@ const Intro: React.FC = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 animate-[bounce_3s_infinite]">
-            Hi, I&apos;m Gunti Ravikumar
+            Hi, I&apos;m Ravikumar Gunti
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 mb-8">Undergraduate at IIITDM Jabalpur</p>
           
