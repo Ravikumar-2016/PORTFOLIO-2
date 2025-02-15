@@ -36,7 +36,7 @@ const Header: React.FC = () => {
               <Github size={22} />
             </a>
             <a
-              href="https://www.linkedin.com/in/gunti-ravikumar-8b360a2a8"
+              href="https://www.linkedin.com/in/ravikumar-gunti-8b360a2a8/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-teal-300 transition-colors duration-300 p-1.5 rounded-lg hover:bg-teal-500/10"
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://www.instagram.com/ravikumargunti2016/"
+              href="https://www.instagram.com/ravikumargunti123/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-teal-300 transition-colors duration-300 p-1.5 rounded-lg hover:bg-teal-500/10"
@@ -185,7 +185,7 @@ const Header: React.FC = () => {
                 <Github size={20} />
               </a>
               <a
-                href="https://www.linkedin.com/in/gunti-ravikumar-8b360a2a8"
+                href="https://www.linkedin.com/in/ravikumar-gunti-8b360a2a8/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#35d7ff] transition-colors duration-200"
@@ -193,7 +193,7 @@ const Header: React.FC = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://www.instagram.com/ravikumargunti2016/"
+                href="https://www.instagram.com/ravikumargunti123/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-[#35d7ff] transition-colors duration-200"
