@@ -45,7 +45,7 @@ const Header: React.FC = () => {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://www.instagram.com/ravikumargunti123/"
+              href="https://www.instagram.com/ravikumar_gunti__/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-teal-300 transition-colors duration-300 p-1.5 rounded-lg hover:bg-teal-500/10"
